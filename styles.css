@@ -1,0 +1,30 @@
+html, body{
+   background: #A9A9A9;
+   height: 100vh;
+}
+
+.aboutme{
+   text-align: center;
+   padding: 5% 5% 5% 5%;
+   font-size: 125%%;
+   font-weight: 400;
+}
+
+.page{
+   height: 100vh;
+
+}
+
+a.back-to-top{
+   width:60px;
+   height:60px;
+   text-indent: -9999px;
+   position: fixed;
+   z-index: 999;
+	right: 20px;
+	bottom: 20px;
+   background: #27AE61 url("up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
