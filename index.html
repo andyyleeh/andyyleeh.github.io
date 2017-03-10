@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
 </head>
 
-<body class="p1">
+<body class="p1" id="main">
     <!-- <div class="nav">
         <ul>
             <li>
@@ -29,14 +29,47 @@
         </ul>
     </div> -->
     <div class="icon">
-        Han Se Andrew Lee
+        <p>
+            Han Se Andrew Lee
+        </p>
+        <ul class="nav">
+            <li>
+                <a href="#main">About Me</a>
+            </li>
+            <li>
+                <a href="#page1">Resume</a>
+            </li>
+            <li>
+                <a href="#page2">Projects</a>
+
+            </li>
+            <li>
+                <a href="#">Contact Me</a>
+            </li>
+        </ul>
+
     </div>
     <div class="welcome">
         Welcome!
     </div>
     <div class="intro">
-        My name is Han Se (Andrew) Lee and I am a Software Engineering Student at the University of Waterloo.
+        My name is Han Se (Andrew) Lee and I am <span id="changeText" class="change">a Software engineering student.</span>
     </div>
+
+    <script type="text/javascript">
+        var text = ["a technology enthusiast.", "a creator in the making.", "a Software engineering student."];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        setInterval(change, 2000);
+
+        function change() {
+            elem.innerHTML = text[counter];
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
+            }
+        }
+    </script>
 
     <!-- draw a line -->
     <script class="line">
