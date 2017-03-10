@@ -2,87 +2,103 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <title>Andrew Han Se Lee</title>
-
-    <body>
-        Hello
-    </body>
-    <p class="aboutme">
-        My name is Han Se (Andrew) Lee and I am a Software Engineering student at the University of Waterloo.
-    </p>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
 </head>
 
-<div id="nav">
-    <ul>
-        <li>
-            <a href=#aboutMe>About Me</a>
-        </li>
-        <li>
-            <a href=#projects>Projects</a>
-        </li>
-        <li>
-            <a href=#resume>Resume</a>
-        </li>
-        <li>
-            <a href=#contact>Contact Me</a>
-        </li>
-    </ul>
-</div>
+<body class="p1">
+    <!-- <div class="nav">
+        <ul>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact Me</a>
+            </li>
+        </ul>
+    </div> -->
+    <div class="icon">
+        Han Se Andrew Lee
+    </div>
+    <div class="welcome">
+        Welcome!
+    </div>
+    <div class="intro">
+        My name is Han Se (Andrew) Lee and I am a Software Engineering Student at the University of Waterloo.
+    </div>
 
-<div id="page1" class="page">
-    <a id="aboutMe"></a>
-    <!--- About me content goes here -->
-</div>
-
-<div id="page2" class="page">
-    <a id="projects"></a>
-    <!--- Projects content goes here -->
-</div>
-
-
-<div id="page3" class="page">
-    <a id="resume"></a>
-    <!--- Resume content goes here -->
-</div>
-
-<div id="page4" class="page">
-    <a id="contact"></a>
-    <!--- Contact content goes here -->
-</div>
-
-<a href="#" class="back-to-top">To the top</a>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-    $('.smooth').on('click', function() {
-        $.smoothScroll({
-            scrollElement: $('body'),
-            scrollTarget: '#' + this.id
-        });
-
-        return false;
-    });
-</script>
-
-<script>
-    var amountScrolled = 300;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('slow');
-        } else {
-            $('a.back-to-top').fadeOut('slow');
+    <!-- draw a line -->
+    <script class="line">
+        function createLineElement(x, y, length, angle) {
+            var line = document.createElement("div");
+            var styles = 'border: 1px solid #89CFF0; ' +
+                'width: ' + length + 'px; ' +
+                'height: 0px; ' +
+                '-moz-transform: rotate(' + angle + 'rad); ' +
+                '-webkit-transform: rotate(' + angle + 'rad); ' +
+                '-o-transform: rotate(' + angle + 'rad); ' +
+                '-ms-transform: rotate(' + angle + 'rad); ' +
+                'position: absolute; ' +
+                'top: ' + y + 'px; ' +
+                'left: ' + x + 'px; ';
+            line.setAttribute('style', styles);
+            return line;
         }
-    });
 
-    $('a.back-to-top').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 700);
-        return false;
-    });
-</script>
-<!-- try to add for page clicking as well -->
+        function createLine(x1, y1, x2, y2) {
+            var a = x1 - x2,
+                b = y1 - y2,
+                c = Math.sqrt(a * a + b * b);
+
+            var sx = (x1 + x2) / 2,
+                sy = (y1 + y2) / 2;
+
+            var x = sx - c / 2,
+                y = sy;
+
+            var alpha = Math.PI - Math.atan2(-b, a);
+
+            return createLineElement(x, y, c, alpha);
+        }
+        var x = document.body.appendChild(createLine(485, 135, 780, 135));
+    </script>
+
+    <div class="mid">
+        <p class="ele">
+            <a class="ele" href="#page1">Resume</a>
+        </p>
+        <img id="img" class="ele" src="photos/pic1.jpg" alt="linkedin profile picture" style="width:240px; height:360px;" />
+
+        <p class="ele">
+            <a class="ele" href="#page2">Projects</a>
+        </p>
+    </div>
+</body>
+
+<body>
+    <div id="page1">
+        <a id="resume" class="scroll ">
+        </a>
+        <h1 class="hResume">Resume</h1>
+    </div>
+    <div id="page2">
+        <a id="projects" class="scroll ">
+        </a>
+        <h1 class="hResume">Projects</h1>
+    </div>
+
+
+</body>
 
 </html>

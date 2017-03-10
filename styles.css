@@ -1,30 +1,117 @@
-html, body{
-   background: #A9A9A9;
-   height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
 }
-
-.aboutme{
-   text-align: center;
-   padding: 5% 5% 5% 5%;
-   font-size: 125%%;
-   font-weight: 400;
+.p1{
+   height: 1200px;
 }
-
-.page{
-   height: 100vh;
-
-}
-
-a.back-to-top{
-   width:60px;
-   height:60px;
-   text-indent: -9999px;
+.icon{
    position: fixed;
-   z-index: 999;
-	right: 20px;
-	bottom: 20px;
-   background: #27AE61 url("up-arrow.png") no-repeat center 43%;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+   text-align: left;
+   color: white;
+   padding-top: 8px;
+   padding-left: 8px;
+   font-family: 'Harmattan', sans-serif;
+   opacity: 0.5;
+}
+.nav ul {
+  list-style: none;
+  background-color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  /*border-bottom: 2.2px solid #A9A9A9;*/
+}
+.nav li {
+   margin-left: 55px;
+   margin-right: 55px;
+   display:inline-block;
+  line-height: 60px;
+  height: 60px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  display: block;
+  /*transition: .3s background-color;*/
+}
+
+.nav a:hover {
+  /*background-color: #005f5f;*/
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #fff;
+  cursor: default;
+}
+
+.welcome{
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-top: 70px;
+   text-align: center;
+   font-size: 3em;
+   font-family: 'Roboto Slab', serif;
+   color: #fff;
+   font-weight: 200;
+}
+.intro{
+   margin-top: 20px;
+   text-align: center;
+   font-size: 1.2em;
+   color: #fff;
+   font-family: 'Lato', sans-serif;
+   padding-left: 40px;
+   padding-right: 40px;
+
+}
+.line{
+   color: red;
+}
+.mid{
+   display: flex;
+   font-family: 'Roboto Slab', serif;
+   color: white;
+   justify-content: space-between;
+   margin-top: 50px;
+   padding-left: 100px;
+   padding-right: 100px;
+   font-size: 2.7em;
+   height: 400px;
+}
+.ele{
+   color: white;
+}
+.ele a:active{
+   text-decoration: none;
+   margin: 40px 40px 40px 40px;
+}
+.ele a:link{
+   text-decoration: none;
+   margin: 40px 40px 40px 40px;
+}
+.ele a:hover{
+   font-size: 1.05em;
+}
+
+.scroll{
+   color: white;
+}
+.hResume{
+   text-align: center;
+   padding-top: 20px;
+   color: white;
+   font-size: 2.4em;
+   font-family: 'Lato', sans-serif;
+}
+#page1,#page2{
+   height: 700px;
 }
