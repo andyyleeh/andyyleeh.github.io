@@ -3,9 +3,9 @@
 
 <head>
     <title>Andrew Han Se Lee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab" rel="stylesheet">
@@ -13,86 +13,41 @@
 </head>
 
 <body>
-    <div id="leftTop">
-        Andrew Han Se Lee
-    </div>
-    <!-- <nav class="navbar navbar-default" id="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-                <a class="navbar-brand" href="#">Brand</a>
+    <div id="page1">
+        <p id="cornericon">Andrew Han Se Lee</p>
+        <div class="grid1">
+            <div class="col-side1">
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Me</a>
-                    </li>
-                </ul>
+            <div class="column1">
+                <p>
+                    <a href="#page2">About me</a>
+                </p>
             </div>
-        </div> -->
-    <!-- </nav> -->
-    <div class="row" id="welc">
-        <div class="col-sm-4">
+            <div class="column2">
+                <p>
+                    <a href="#page3">Resume</a>
+                </p>
+            </div>
+            <div class="column3">
+                <p>
+                    <a href="#page4">Projects</a>
+                </p>
+            </div>
+            <div class="column4">
+                <p>
+                    <a href="#page5">Contact me</a>
+                </p>
+            </div>
+            <div class="col-side2">
+            </div>
         </div>
-        <div class="col-sm-4" id="welcome">
-            Welcome!
-            <hr align="center" width="60%" color="#000" id="line" />
-        </div>
-        <div class="col-sm-4">
-        </div>
-    </div>
-    <br />
-
-    <div class="row">
-        <div class="col-sm-2">
-        </div>
-        <div class="col-sm-2">
-            <hr />
-        </div>
-        <div class="col-sm-4">
-            <ul id="top_nav">
-                <li>
-                    <a href="#main_body">About Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a>Contact Me</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-2">
-            <hr />
-        </div>
-        <div class="col-sm-2">
-        </div>
-    </div>
-
-    <div id="main_body">
-        <div>
-            <br />
-            <p id="alt_text">
-                My name is Andrew Han Se Lee and I am <span id="changeText" class="change">a Software engineering student.</span>
-            </p>
-        </div>
+        <h1 id="welcome">Welcome!</h1>
+        <p id="alt">
+            My name is Han Se (Andrew) Lee and I am a <span id="changeText">Software Engineering student.</span>
+        </p>
         <!-- Alternating text -->
         <script type="text/javascript">
-            var text = ["a technology enthusiast.", "a creator in the making.", "a Software engineering student."];
+            var text = [" technology enthusiast.", " creator in the making.", " Software Engineering student."];
             var counter = 0;
             var elem = document.getElementById("changeText");
             setInterval(change, 2000);
@@ -105,39 +60,74 @@
                 }
             }
         </script>
-        <div id="abtme">
-            <!-- <img id="img" src="photos/pic1.jpg" alt="linkedin profile picture" style="width:160px; height:240px;" /> -->
-            <h2 id="head1"><span class="glyphicon glyphicon-hand-right"></span>       About me</h2>
+    </div>
+    <div id="page2">
+        <h1 class="titles">About me</h1>
+        <div class="grid2">
+            <div class="c-1">
+            </div>
+            <div class="c-2">
+                <hr />
+            </div>
+            <div class="c-3">
+            </div>
         </div>
-        <p id="iam">
-            I am a Software Engineering student at the University of Waterloo.
+        <br />
+        <p class="description">
+            Something interesting about me.
         </p>
-        <p id="iam">
-            I am a technology enthusiast.
+    </div>
+    <div id="page3">
+        <h1 class="titles">Resume</h1>
+        <div class="grid2">
+            <div class="c-1">
+            </div>
+            <div class="c-2">
+                <hr />
+            </div>
+            <div class="c-3">
+            </div>
+        </div>
+        <br />
+        <p class="description">
+            Here is my <a href="resume.pdf" target="_blank">resume</a>!
         </p>
-        <p id="descrip">
-            In my spare time, one of my hobbies includes keeping up with the latest gadgets such as smartphones, laptops, tablets, and all the other devices that are joining the Internet of Things. Learning about the newest features and the latest top notch specs.
-        </p>
-        <p id="iam">
-            I am a creator in the making.
-        </p>
-        <p id="descrip">
-            Whether it was sketching my ideal smartphone, camera or any gadget, or building cars and airplanes with lego blocks, I've always let my imagination go and enjoyed bringing those creations to life. Programming has allowed my imagination to run free and
-            I am constantly putting in work to learn the necessary tools to build my ideas.
-        </p>
-        <div id="xtrainfo">
-            <img id="img" src="photos/pic1.jpg" alt="linkedin profile picture" style="width:140px; height:210px;" />
-            <p>
-                When I'm not working on my programming skills, I enjoy playing basketball, watching sports with friends and family reading and listening to music.
-            </p>
+        <div style="margin-left:auto;margin-right:auto;text-align:center">
+            <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="30%">
+  </object>
         </div>
     </div>
-
-    <div id="resume">
-
+    <div id="page4">
+        <h1 class="titles">Projects</h1>
+        <div class="grid2">
+            <div class="c-1">
+            </div>
+            <div class="c-2">
+                <hr />
+            </div>
+            <div class="c-3">
+            </div>
+        </div>
+        <br />
+        <p class="description">
+            Some of the stuff I did
+        </p>
     </div>
-    <div id="projects">
-
+    <div id="page5">
+        <h1 class="titles">Contact me</h1>
+        <div class="grid2">
+            <div class="c-1">
+            </div>
+            <div class="c-2">
+                <hr />
+            </div>
+            <div class="c-3">
+            </div>
+        </div>
+        <br />
+        <p class="description">
+            Contact info
+        </p>
     </div>
 </body>
 
