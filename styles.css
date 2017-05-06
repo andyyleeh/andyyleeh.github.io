@@ -10,9 +10,16 @@ a{
    color: black;
 }
 
+.icon{
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
 .titles{
    font-family: 'Roboto Slab', serif;
    font-size: 1.7em;
+   font-weight: bold;
+   color: #000000;
    text-align: center;
    padding-top: 50px;
    margin-top: 0;
@@ -22,8 +29,12 @@ a{
 .description{
    text-align: center;
    padding-top: 10px;
-   font-size: 1.2em;
-   font-family: 'Harmattan', serif;
+   padding-left: 120px;
+   padding-right: 120px;
+   padding-bottom: 10px;
+   font-size: 0.9em;
+   font-family: 'Roboto', sans-serif;
+   font-weight: lighter;
 }
 
 .grid1{
@@ -36,6 +47,12 @@ a{
    margin-top: 20px;
    width: 100%;
    max-width: 1300px;
+}
+
+.contacticon{
+   opacity: 1.9;
+   padding: 5px 30px 5px 30px;
+   background-color: white;
 }
 
 .row:before,
@@ -110,15 +127,15 @@ a{
    background-image: url("photos/homebg2.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   opacity: 0.5;
+   opacity: 0.8;
    height: 100%;
 }
 #page5{
    background-image: url("photos/homebg2.jpg");
    background-size: cover;
+   opacity: 0.8;
    background-repeat: no-repeat;
-   background-position:center;
-   opacity: 0.5;
+   background-position: right center;
    height: 100%;
 }
 
@@ -127,4 +144,15 @@ a{
    width:40%;
    height: 350px;
    margin-bottom: 20px;
+}
+
+#rlink{
+   text-decoration: underline;
+}
+
+#contact{
+   opacity: 1;
+   color: black;
+   display: inline;
+   margin: 0 auto;
 }
