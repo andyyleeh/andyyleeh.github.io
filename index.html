@@ -40,6 +40,20 @@
             </div>
             <div class="col-side2">
             </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+            <script>
+                $('.smooth').on('click', function() {
+                    $.smoothScroll({
+                        scrollElement: $('body'),
+                        scrollTarget: '#' + this.id
+                    });
+
+                    return false;
+                });
+            </script>
+
         </div>
         <h1 id="welcome">Welcome!</h1>
         <p id="alt">
@@ -62,6 +76,7 @@
         </script>
     </div>
     <div id="page2">
+        <p id="cornericon">Andrew Han Se Lee</p>
         <h1 class="titles">About me</h1>
         <div class="grid2">
             <div class="c-1">
@@ -74,10 +89,14 @@
         </div>
         <br />
         <p class="description">
-            Something interesting about me.
+            I am a first year software engineering student at the University of Waterloo. I am a hardworker and a quick learner that is passionate about solving problems. Eager to learn, I am always looking for opportunities to grow and expand my skills. <br/>
+
+            </br/>When I'm not at a desk working on my craft, I'm in a gym working on my jumpshot, in the weight room buring off calories, in a kitchen taking in calories or hanging out with friends.
+
         </p>
     </div>
     <div id="page3">
+        <p id="cornericon">Andrew Han Se Lee</p>
         <h1 class="titles">Resume</h1>
         <div class="grid2">
             <div class="c-1">
@@ -90,7 +109,7 @@
         </div>
         <br />
         <p class="description">
-            Here is my <a href="resume.pdf" target="_blank">resume</a>!
+            Here is my <a id="rlink" href="resume.pdf" target="_blank">resume</a>!
         </p>
         <div style="margin-left:auto;margin-right:auto;text-align:center">
             <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="30%">
@@ -98,6 +117,7 @@
         </div>
     </div>
     <div id="page4">
+        <p id="cornericon">Andrew Han Se Lee</p>
         <h1 class="titles">Projects</h1>
         <div class="grid2">
             <div class="c-1">
@@ -114,6 +134,7 @@
         </p>
     </div>
     <div id="page5">
+        <p id="cornericon">Andrew Han Se Lee</p>
         <h1 class="titles">Contact me</h1>
         <div class="grid2">
             <div class="c-1">
@@ -128,6 +149,11 @@
         <p class="description">
             Contact info
         </p>
+        <div align="center" class="contacticon">
+            <a href="https://www.linkedin.com/andrewhanselee" class="icon" target="_blank"><img width="20" height="20" src="icons/png/linkedin.png" /> </a>
+            <a href="https://www.facebook.com/andrew.lee.549" class="icon" target="_blank"><img width="20" height="20" src="icons/png/facebook.png" /> </a>
+            <a href="mailto:hs27lee@edu.uwaterloo.ca?Subject=Hi%20Han%20Se" class="icon" target="_top"><img width="20" height="20" src="icons/png/gmail.png" /> </a>
+        </div>
     </div>
 </body>
 
