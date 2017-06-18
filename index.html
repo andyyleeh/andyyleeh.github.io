@@ -1,160 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Andrew Han Se Lee</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
+   <title>Andrew Han Se Lee</title>
+   <link rel="stylesheet" href="styles.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
 </head>
+<div>
+   <center class="head">
+      Welcome!
+   </center>
+   <center class="head" style="font-size:1.0em;">
+      My name is Han Se (Andrew) Lee and I am a <span id="changeText">Software Engineering student.</span>
+   </center>
 
-<body>
-    <div id="page1">
-        <p id="cornericon">Andrew Han Se Lee</p>
-        <div class="grid1">
-            <div class="col-side1">
-            </div>
-            <div class="column1">
-                <p>
-                    <a href="#page2">About me</a>
-                </p>
-            </div>
-            <div class="column2">
-                <p>
-                    <a href="#page3">Resume</a>
-                </p>
-            </div>
-            <div class="column3">
-                <p>
-                    <a href="#page4">Projects</a>
-                </p>
-            </div>
-            <div class="column4">
-                <p>
-                    <a href="#page5">Contact me</a>
-                </p>
-            </div>
-            <div class="col-side2">
-            </div>
+   <div class=grid style="padding-bottom:50px;">
+      <!-- break line -->
+      <div id="brLine-l">
+      </div>
+      <div id="brLine-mid">
+         <hr />
+         <!-- nav lsit -->
+         <ul>
+            <li>
+               <a href="#">ABOUT</a>
+            </li>
+            <li>
+               <a href="#">PROJECTS</a>
+            </li>
+            <li>
+               <a href="#">CONTACT</a>
+            </li>
+         </ul>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-            <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-            <script>
-                $('.smooth').on('click', function() {
-                    $.smoothScroll({
-                        scrollElement: $('body'),
-                        scrollTarget: '#' + this.id
-                    });
+      </div>
+      <div id="brLine-r">
+      </div>
+   </div>
 
-                    return false;
-                });
-            </script>
+   <div class="grid">
+      <div class="leftC">
+      </div>
+      <div class="midC">
+         <h3 class="secTitle">Who am I?..</h3>
+         <p>
+            I like getting things done. Student at the University of Waterloo, learning is a big part of my life. I like discovering the simplest and most efficient methods to solving problems.
+         </p>
 
-        </div>
-        <h1 id="welcome">Welcome!</h1>
-        <p id="alt">
-            My name is Han Se (Andrew) Lee and I am a <span id="changeText">Software Engineering student.</span>
-        </p>
-        <!-- Alternating text -->
-        <script type="text/javascript">
-            var text = [" technology enthusiast.", " creator in the making.", " Software Engineering student."];
-            var counter = 0;
-            var elem = document.getElementById("changeText");
-            setInterval(change, 2000);
-
-            function change() {
-                elem.innerHTML = text[counter];
-                counter++;
-                if (counter >= text.length) {
-                    counter = 0;
-                }
-            }
-        </script>
-    </div>
-    <div id="page2">
-        <p id="cornericon">Andrew Han Se Lee</p>
-        <h1 class="titles">About me</h1>
-        <div class="grid2">
-            <div class="c-1">
-            </div>
-            <div class="c-2">
-                <hr />
-            </div>
-            <div class="c-3">
-            </div>
-        </div>
-        <br />
-        <p class="description">
-            I am a first year software engineering student at the University of Waterloo. I am a hardworker and a quick learner that is passionate about solving problems. Eager to learn, I am always looking for opportunities to grow and expand my skills. <br/>
-
-            </br/>When I'm not at a desk working on my craft, I'm in a gym working on my jumpshot, in the weight room buring off calories, in a kitchen taking in calories or hanging out with friends.
-
-        </p>
-    </div>
-    <div id="page3">
-        <p id="cornericon">Andrew Han Se Lee</p>
-        <h1 class="titles">Resume</h1>
-        <div class="grid2">
-            <div class="c-1">
-            </div>
-            <div class="c-2">
-                <hr />
-            </div>
-            <div class="c-3">
-            </div>
-        </div>
-        <br />
-        <p class="description">
-            Here is my <a id="rlink" href="resume.pdf" target="_blank">resume</a>!
-        </p>
-        <div style="margin-left:auto;margin-right:auto;text-align:center">
+         <h3 class="secTitle">Things I've done...</h3>
+         <h4>Cloudy Days</h4>
+         <h4>Stay Productive</h4>
+         <h4>My <a id="rlink" href="resume.pdf" target="_blank" style>resume</a></h4>
+         <div style="margin-left:auto;margin-right:auto;text-align:center">
             <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="30%">
-  </object>
-        </div>
-    </div>
-    <div id="page4">
-        <p id="cornericon">Andrew Han Se Lee</p>
-        <h1 class="titles">Projects</h1>
-        <div class="grid2">
-            <div class="c-1">
-            </div>
-            <div class="c-2">
-                <hr />
-            </div>
-            <div class="c-3">
-            </div>
-        </div>
-        <br />
-        <p class="description">
-            Some of the stuff I did
-        </p>
-    </div>
-    <div id="page5">
-        <p id="cornericon">Andrew Han Se Lee</p>
-        <h1 class="titles">Contact me</h1>
-        <div class="grid2">
-            <div class="c-1">
-            </div>
-            <div class="c-2">
-                <hr />
-            </div>
-            <div class="c-3">
-            </div>
-        </div>
-        <br />
-        <p class="description">
-            Contact info
-        </p>
-        <div align="center" class="contacticon">
-            <a href="https://www.linkedin.com/andrewhanselee" class="icon" target="_blank"><img width="20" height="20" src="icons/png/linkedin.png" /> </a>
-            <a href="https://www.facebook.com/andrew.lee.549" class="icon" target="_blank"><img width="20" height="20" src="icons/png/facebook.png" /> </a>
-            <a href="mailto:hs27lee@edu.uwaterloo.ca?Subject=Hi%20Han%20Se" class="icon" target="_top"><img width="20" height="20" src="icons/png/gmail.png" /> </a>
-        </div>
-    </div>
-</body>
+            </object>
+         </div>
+
+         <h3 class="secTitle">Sound interesting?</h3>
+      </div>
+      <div class="rightC">
+      </div>
+   </div>
+</div>
+
+<script>
+   var text = [" technology enthusiast.", " creator in the making.", " Software Engineering student."];
+   var counter = 0;
+   var elem = document.getElementById("changeText");
+   setInterval(change, 2000);
+
+   function change() {
+      elem.innerHTML = text[counter];
+      counter++;
+      if (counter >= text.length) {
+         counter = 0;
+      }
+   }
+</script>
 
 </html>
