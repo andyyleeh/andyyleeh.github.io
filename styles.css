@@ -41,6 +41,7 @@
 body{
    width: 100%;
    font-family: 'Lato',sans-serif;
+   overflow-x: hidden;
 }
 
 a{
@@ -75,6 +76,24 @@ p{
         display: block;
         width: 100%;
     }
+}
+
+#bottomBar{
+   position:fixed;
+   float: right;
+   left: 0;
+   bottom: 0;
+   width:100%;
+}
+
+#bottomBar li{
+   float: right;
+   width: 10%;
+}
+
+#topphoto{
+   padding-top: 30px;
+   border-radius: 50%;
 }
 
 #brLine-l{
