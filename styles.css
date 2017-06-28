@@ -11,7 +11,8 @@
 
 .secTitle{
    font-family:'Lato',sans-serif;
-   font-weight: lighter;
+   font-weight: normal;
+   color: gray;
    font-size: 1.0em;
    padding-bottom: 7px;
 }
@@ -50,6 +51,10 @@ a{
    font-family: 'Lato',sans-serif;
    font-weight: bold;
    font-size: 0.8em;
+}
+
+a:hover{
+   text-decoration:underline;
 }
 
 ul{
@@ -92,8 +97,10 @@ p{
 }
 
 #topphoto{
-   padding-top: 30px;
-   border-radius: 50%;
+   padding: 0;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   border-radius: 180px;
 }
 
 #brLine-l{
@@ -115,4 +122,15 @@ p{
    float:left;
    min-height: 1px;
    padding: 0;
+}
+
+#rlink{
+   font-weight: lighter;
+   font-size: 1em;
+}
+
+#appDescrip{
+   font-size: 0.9em;
+   padding-left: 10px;
+   padding-right: 10px;
 }
