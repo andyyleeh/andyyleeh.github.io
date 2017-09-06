@@ -1,136 +1,36 @@
-.head{
-   padding-top: 25px;
-   font-family:'Lato',sans-serif;
+#body{
+   margin: 0;
+   height: 100%;
+   width: 100%;
+}
+
+#tophead{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
+
+#tophead a{
+   color: black;
+   text-decoration: none;
+   font-family: "Lato", sans-serif;
+   font-weight: normal;
    font-size: 1.8em;
 }
 
-.grid{
-   width: 100%;
-   padding-top: 20px;
-}
-
-.secTitle{
-   font-family:'Lato',sans-serif;
-   font-weight: normal;
-   color: gray;
-   font-size: 1.0em;
-   padding-bottom: 7px;
-}
-
-.leftC{
-   height:60px;
-   width:25%;
-   float:left;
-   min-height: 1px;
-   padding: 0;
-}
-.rightC{
-   height:60px;
-   width:25%;
-   float:left;
-   padding: 0;
-}
-.midC{
-   height:60px;
-   width:50%;
-   float:left;
-   min-height: 1px;
-   padding: 0;
-}
-
-
-body{
-   width: 100%;
-   font-family: 'Lato',sans-serif;
-   overflow-x: hidden;
-}
-
-a{
-   text-decoration: none;
-   color: black;
-   font-family: 'Lato',sans-serif;
-   font-weight: bold;
-   font-size: 0.8em;
-}
-
-a:hover{
-   text-decoration:underline;
-}
-
-ul{
-   list-style: none;
-   display:table;
-   width:100%;
+#introText{
+   font-size: 1.3em;
+   font-family: "Lato", sans-serif;
+   font-weight: lighter;
    text-align: center;
 }
-li{
-   display:table-cell;
-   width:25.3%;
-   text-align:justify;
+
+.iconlinks{
+   text-align: center;
+   margin-bottom: 2px;
 }
 
-p{
-   padding-left: 5px;
-   padding-bottom: 15px;
-   text-align: justify;
-
-}
-
-@media (max-width: 767px) {
-    li {
-        display: block;
-        width: 100%;
-    }
-}
-
-#bottomBar{
-   position:fixed;
-   float: right;
-   left: 0;
-   bottom: 0;
-   width:100%;
-}
-
-#bottomBar li{
-   float: right;
-   width: 10%;
-}
-
-#topphoto{
-   padding: 0;
-   margin-top: 30px;
-   margin-bottom: 10px;
-   border-radius: 180px;
-}
-
-#brLine-l{
-   height:60px;
-   width:35%;
-   float:left;
-   min-height: 1px;
-   padding: 0;
-}
-#brLine-r{
-   height:60px;
-   width:35%;
-   float:left;
-   padding: 0;
-}
-#brLine-mid{
-   height:60px;
-   width:30%;
-   float:left;
-   min-height: 1px;
-   padding: 0;
-}
-
-#rlink{
-   font-weight: lighter;
-   font-size: 1em;
-}
-
-#appDescrip{
-   font-size: 0.9em;
-   padding-left: 10px;
-   padding-right: 10px;
+.iconlinks a{
+   text-decoration: none;
+   color: black;
 }

@@ -3,106 +3,117 @@
 <head>
    <title>Andrew Han Se Lee</title>
    <link rel="stylesheet" href="styles.css">
+   <!-- semantic -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet"/>
    <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" />
+   <!-- js -->
+   <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 </head>
-<div>
-   <footer id="bottomBar">
-      <ul>
-         <li>
-            <a href="#">Instagram</a>
-         </li>
-         <li>
-            <a href="#">Github</a>
-         </li>
-      </ul>
-   </footer>
 
-   <center class="head">
-      Welcome!
-   </center>
-   <center class="head" style="font-size:1.0em;">
-      My name is Han Se (Andrew) Lee and I am a <span id="changeText">Software Engineering student.</span>
-   </center>
-
-   <center>
-      <img src="photos/pic1.jpg" alt="Andrew Han Se Lee" height="180" width="180" id="topphoto" />
-   </center>
-
-   <div class=grid style="padding-bottom:50px;">
-      <!-- break line -->
-      <div id="brLine-l">
-      </div>
-      <div id="brLine-mid">
-         <hr />
-         <!-- nav lsit -->
-         <ul>
-            <li>
-               <a href="#">ABOUT</a>
-            </li>
-            <li>
-               <a href="#">PROJECTS</a>
-            </li>
-            <li>
-               <a href="#">CONTACT</a>
-            </li>
-         </ul>
-
-         <hr />
-
-      </div>
-      <div id="brLine-r">
+<body id="body">
+   <div class="container">
+      <div id="tophead">
+         <a href="/">Andrew Han Se Lee</a>
       </div>
    </div>
 
-   <div class="grid">
-      <div class="leftC">
-      </div>
-      <div class="midC">
-         <h3 class="secTitle">Who am I?..</h3>
-         <p>
-            I like getting things done. Student at the University of Waterloo, learning is a big part of my life. I like discovering the simplest and most efficient methods to solving problems.
-         </p>
-
-         <h3 class="secTitle">Things I've done...</h3>
-         <a id="rlink">On The Grind</a>
-         <p id="appDescrip">
-            Android mobile productivity app to reduce time lost on our smartphones when we want to be productive.
-
-         </p>
-
-         <a id="rlink">Cloudy Days</a>
-         <p id="appDescrip">
-            Android mobile weather app built using Android Studio. It uses the Openweathermap API to pull-in data about current and future weather conditions.
-         </p>
-         <a id="rlink" href="resume.pdf" target="_blank" style="font-size:1em; font-weight= light;">My resume</a>
-         <div style="margin-left:auto;margin-right:auto;text-align:center">
-            <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="75%" height="240px">
-            </object>
+   <div class="ui grid">
+      <div class="row">
+         <div class="four wide column"> </div>
+         <div class="eight wide column">
+            <hr />
+            <p id="introText">
+               I am a <span id="changeText">Software Engineering student.</span>
+            </p>
          </div>
-
-         <h3 class="secTitle">Sound interesting?</h3>
+         <div class="four wide column"> </div>
       </div>
-      <div class="rightC">
+      <div class="row">
+         <div class="four wide column"> </div>
+         <div class="eight wide column">
+            <hr />
+            <div class="ui three column grid">
+               <div class="column iconlinks">
+                  <a target="_blank" href="https://github.com/andyyleeh"><i class="github alternate icon"></i></a>
+               </div>
+               <div class="column iconlinks">
+                  <a target="_blank" href="https://www.linkedin.com/in/andrewhanselee/"><i class="linkedin icon"></i></a>
+               </div>
+               <div class="column iconlinks">
+                  <a target="_blank" href="https://www.instagram.com/andyleeh_/"><i class="instagram icon"></i></a>
+               </div>
+            </div>
+            <hr />
+
+            <!-- about me -->
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+            <div>
+               <h2>A little about me</h2>
+               <p>
+                  I am a software engineering student at the Univeristy of Waterloo. Although I still have lots to learn, I enjoy web development and dabble a bit in design. Currently intrigued with AI, I am seeking to expand my knowledge in machine learning and the automated world.
+               </p>
+               <p>
+                  As a worker, I try to tackle problems be finding the simplest and most effective solution without adding too many bells and whistles. I believe that getting the job done properly outweights being flashy.
+               </p>
+               <p>
+                  I am also a pretty big tech enthusiast and like to geek out about the lastest smartphones and gadgets.
+               </p>
+               <p>
+                  I you want to chat or work together, reach out to me on social media, linkedin or email!
+               </p>
+            </div>
+
+            <!-- projects -->
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+            <div>
+               <h2>What I've done</h2>
+               <div class="ui sengment">
+                  <a href="https://lookuppickup.herokuapp.com/">LookUp PickUp</a>
+                  <p>
+                     <em>LookUpPickUp</em> is a web application that helps people find nearby basketball courts, organize pick up games and find new baller friends. Find out the location, number of courts and availability of washrooms and water by searching through the database of courts. [Made with Node.js, Express, MongoDB, HTML, Semantic UI, CSS, jQuery]
+                  </p>
+                  <img class="ui medium centered rounded image" src="lupu.png">
+               </div>
+               <div class="ui sengment">
+                  <a href="https://lookuppickup.herokuapp.com/">OnTheGrind</a>
+                  <p>
+                     <em>OnTheGrind</em> is a mobile application that aims to reduce smartphone usage during productive hours. Set yourself a maximum amount of unlocks allowed while you study, or focus on your workout by having stopwatch options on your lockscreen. [Made with Java, Android Studio, XML]
+                  </p>
+                  <img class="ui medium centered rounded image" src="lupu.png">
+               </div>
+               <div class="ui sengment">
+                  <a href="https://github.com/andyyleeh">Portfolio websites</a>
+                  <p>
+                     I built a few portfolio websites for me and my friends. These websites are static webpages with small animations to share our accomplishments with employers.  [Made with HTML, CSS, Semantic UI, jQuery]
+                  </p>
+               </div>
+            </div>
+            <div>
+               <h2>My resume</h2>
+               <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="75%" height="240px">
+            </div>
+
+         </div>
+         <div class="four wide column"> </div>
       </div>
    </div>
-</div>
 
-<script>
-   var text = [" technology enthusiast.", " creator in the making.", " Software Engineering student."];
-   var counter = 0;
-   var elem = document.getElementById("changeText");
-   setInterval(change, 2000);
+   <script>
+      var text = [" technology enthusiast.", " creator in the making.", " Software Engineering student."];
+      var counter = 0;
+      var elem = document.getElementById("changeText");
+      setInterval(change, 2000);
 
-   function change() {
-      elem.innerHTML = text[counter];
-      counter++;
-      if (counter >= text.length) {
-         counter = 0;
+      function change() {
+         elem.innerHTML = text[counter];
+         counter++;
+         if (counter >= text.length) {
+            counter = 0;
+         }
       }
-   }
-</script>
+   </script>
+
+</body>
 
 </html>
