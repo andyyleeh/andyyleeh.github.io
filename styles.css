@@ -1,36 +1,136 @@
-#body{
+body{
    margin: 0;
+   padding: 0;
+   top : 0;
    height: 100%;
    width: 100%;
 }
 
+.page{
+   height: 100vh;
+}
+
+.one{
+   /*background-color: red;*/
+   background-image: url("background1.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
+}
+
 #tophead{
    text-align: center;
-   margin-top: 20px;
-   margin-bottom: 15px;
+   text-transform: uppercase;
+   font-size: 1.75em;
+   padding-top: 100px;
+   margin-bottom: 35px;
+   z-index: 2;
 }
 
 #tophead a{
    color: black;
    text-decoration: none;
    font-family: "Lato", sans-serif;
-   font-weight: normal;
+   background-color: white;
+   padding: 5px;
+   font-weight: lighter;
    font-size: 1.8em;
+   text-shadow: 0.3px 0.5px 0.3px #FFFFFF;
 }
 
 #introText{
-   font-size: 1.3em;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   color: #FFF;
+   font-size: 2.8em;
    font-family: "Lato", sans-serif;
    font-weight: lighter;
    text-align: center;
 }
 
-.iconlinks{
-   text-align: center;
-   margin-bottom: 2px;
+#me{
+   border-radius: 50%;
+   margin-left: 70px;
+   margin-top: 60px;
 }
 
-.iconlinks a{
-   text-decoration: none;
+.permabot{
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   background-color: white;
+   border-top: 0.5px solid #999999;
+   z-index: 10;
+}
+
+.links{
+   text-align: center;
+   margin-top: 10px;
+}
+.links a{
+   text-align: center;
    color: black;
+   font-size: 1.6em;
+}
+
+.pageTitle{
+   color: white;
+   text-align: left;
+   width: 240px;
+   padding: 10px;
+   font-size: 1.5em;
+   font-weight: normal;
+   background-color: black;
+}
+
+.pageTitle p{
+   font-size: 2em;
+}
+
+.about{
+   margin-top: 50px;
+   margin-left: 50px;
+}
+
+.card1 , .card2, .card3, .card4{
+   position: absolute;
+   border: 1px solid black;
+   margin-top: 40px;
+   background-color: green;
+   z-index: 1;
+}
+
+.cover1, .cover2, .cover3, .cover4{
+   background-color: white;
+   position: absolute;
+   border: 1px solid black;
+   margin-top: 40px;
+   z-index: 2;
+}
+
+.card1, .cover1{
+   height: 200px;
+   width: 200px;
+}
+
+.card2, .cover2{
+   height: 200px;
+   width: 200px;
+}
+
+.card3, .cover3{
+   height: 200px;
+   width: 200px;
+   top: 220px;
+}
+
+.card4, .cover4{
+   height: 200px;
+   width: 200px;
+   top: 220px;
+}
+
+.card{
+   position: relative;
 }

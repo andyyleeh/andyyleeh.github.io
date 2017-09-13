@@ -11,92 +11,129 @@
    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 </head>
 
-<body id="body">
-   <div class="container">
-      <div id="tophead">
-         <a href="/">Andrew Han Se Lee</a>
+<body>
+   <div class="permabot">
+      <div class="ui three column grid">
+         <div class="column links">
+            <a target="_blank" href="https://github.com/andyyleeh"><i class="github alternate icon"></i></a>
+         </div>
+         <div class="column links">
+            <a target="_blank" href="https://www.linkedin.com/in/andrewhanselee/"><i class="linkedin icon"></i></a>
+         </div>
+         <div class="column links">
+            <a target="_blank" href="https://www.instagram.com/andyleeh_/"><i class="instagram icon"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="page one">
+      <div class="container">
+         <div id="tophead">
+            <a href="/">Andrew Han Se Lee</a>
+         </div>
+      </div>
+
+      <div class="ui grid">
+         <div class="row">
+            <div class="four wide column"> </div>
+            <div class="eight wide column">
+               <hr />
+               <p id="introText">
+                  I am a <span id="changeText">Software Engineering student.</span>
+               </p>
+            </div>
+            <div class="four wide column"> </div>
+         </div>
       </div>
    </div>
 
-   <div class="ui grid">
-      <div class="row">
-         <div class="four wide column"> </div>
-         <div class="eight wide column">
-            <hr />
-            <p id="introText">
-               I am a <span id="changeText">Software Engineering student.</span>
+
+   <!-- about me -->
+   <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+   <div class="page two">
+      <div class="ui grid">
+         <div class="six wide column">
+            <div class="pageTitle about">
+               <p>A little about me</p>
+            </div>
+            <img src="bg.jpg" width="200px" height="200px" alt="andrewLee" id="me"/>
+         </div>
+         <div class="ten wide column">
+            <div class="ui grid">
+               <div class="eight wide column card">
+                  <div class="card1">
+                     <p>
+                        I am a software engineering student at the Univeristy of Waterloo. Although I still have lots to learn, I enjoy web development and dabble a bit in design. Currently intrigued with AI, I am seeking to expand my knowledge in machine learning and the automated world.
+                     </p>
+                  </div>
+                  <div class="cover1">
+
+                  </div>
+               </div>
+               <div class="eight wide column card">
+                  <div class="card2">
+                     <p>
+                        As a worker, I try to tackle problems be finding the simplest and most effective solution without adding too many bells and whistles. I believe that getting the job done properly outweights being flashy.
+                     </p>
+                  </div>
+                  <div class="cover2">
+
+                  </div>
+               </div>
+               <div class="eight wide column card">
+                  <div class="card3">
+                     <p>
+                        I am also a pretty big tech enthusiast and like to geek out about the lastest smartphones and gadgets.
+                     </p>
+                  </div>
+                  <div class="cover3">
+
+                  </div>
+               </div>
+               <div class="eight wide column card">
+                  <div class="card4">
+                     <p>
+                        I you want to chat or work together, reach out to me on social media, linkedin or email!
+                     </p>
+                  </div>
+                  <div class="cover4">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="page three">
+      <!-- projects -->
+      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <div>
+         <h2>What I've done</h2>
+         <div class="ui sengment">
+            <a href="https://lookuppickup.herokuapp.com/">LookUp PickUp</a>
+            <p>
+               <em>LookUpPickUp</em> is a web application that helps people find nearby basketball courts, organize pick up games and find new baller friends. Find out the location, number of courts and availability of washrooms and water by searching through the database of courts. [Made with Node.js, Express, MongoDB, HTML, Semantic UI, CSS, jQuery]
+            </p>
+            <img class="ui medium centered rounded image" src="lupu.png">
+         </div>
+         <div class="ui sengment">
+            <a href="https://lookuppickup.herokuapp.com/">OnTheGrind</a>
+            <p>
+               <em>OnTheGrind</em> is a mobile application that aims to reduce smartphone usage during productive hours. Set yourself a maximum amount of unlocks allowed while you study, or focus on your workout by having stopwatch options on your lockscreen. [Made with Java, Android Studio, XML]
+            </p>
+            <img class="ui medium centered rounded image" src="lupu.png">
+         </div>
+         <div class="ui sengment">
+            <a href="https://github.com/andyyleeh">Portfolio websites</a>
+            <p>
+               I built a few portfolio websites for me and my friends. These websites are static webpages with small animations to share our accomplishments with employers.  [Made with HTML, CSS, Semantic UI, jQuery]
             </p>
          </div>
-         <div class="four wide column"> </div>
       </div>
-      <div class="row">
-         <div class="four wide column"> </div>
-         <div class="eight wide column">
-            <hr />
-            <div class="ui three column grid">
-               <div class="column iconlinks">
-                  <a target="_blank" href="https://github.com/andyyleeh"><i class="github alternate icon"></i></a>
-               </div>
-               <div class="column iconlinks">
-                  <a target="_blank" href="https://www.linkedin.com/in/andrewhanselee/"><i class="linkedin icon"></i></a>
-               </div>
-               <div class="column iconlinks">
-                  <a target="_blank" href="https://www.instagram.com/andyleeh_/"><i class="instagram icon"></i></a>
-               </div>
-            </div>
-            <hr />
+   </div>
 
-            <!-- about me -->
-            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-            <div>
-               <h2>A little about me</h2>
-               <p>
-                  I am a software engineering student at the Univeristy of Waterloo. Although I still have lots to learn, I enjoy web development and dabble a bit in design. Currently intrigued with AI, I am seeking to expand my knowledge in machine learning and the automated world.
-               </p>
-               <p>
-                  As a worker, I try to tackle problems be finding the simplest and most effective solution without adding too many bells and whistles. I believe that getting the job done properly outweights being flashy.
-               </p>
-               <p>
-                  I am also a pretty big tech enthusiast and like to geek out about the lastest smartphones and gadgets.
-               </p>
-               <p>
-                  I you want to chat or work together, reach out to me on social media, linkedin or email!
-               </p>
-            </div>
-
-            <!-- projects -->
-            <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-            <div>
-               <h2>What I've done</h2>
-               <div class="ui sengment">
-                  <a href="https://lookuppickup.herokuapp.com/">LookUp PickUp</a>
-                  <p>
-                     <em>LookUpPickUp</em> is a web application that helps people find nearby basketball courts, organize pick up games and find new baller friends. Find out the location, number of courts and availability of washrooms and water by searching through the database of courts. [Made with Node.js, Express, MongoDB, HTML, Semantic UI, CSS, jQuery]
-                  </p>
-                  <img class="ui medium centered rounded image" src="lupu.png">
-               </div>
-               <div class="ui sengment">
-                  <a href="https://lookuppickup.herokuapp.com/">OnTheGrind</a>
-                  <p>
-                     <em>OnTheGrind</em> is a mobile application that aims to reduce smartphone usage during productive hours. Set yourself a maximum amount of unlocks allowed while you study, or focus on your workout by having stopwatch options on your lockscreen. [Made with Java, Android Studio, XML]
-                  </p>
-                  <img class="ui medium centered rounded image" src="lupu.png">
-               </div>
-               <div class="ui sengment">
-                  <a href="https://github.com/andyyleeh">Portfolio websites</a>
-                  <p>
-                     I built a few portfolio websites for me and my friends. These websites are static webpages with small animations to share our accomplishments with employers.  [Made with HTML, CSS, Semantic UI, jQuery]
-                  </p>
-               </div>
-            </div>
-            <div>
-               <h2>My resume</h2>
-               <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="75%" height="240px">
-            </div>
-
-         </div>
-         <div class="four wide column"> </div>
-      </div>
+   <div>
+      <h2>My resume</h2>
+      <object id="resume" data="resume.pdf" type="application/pdf" align="center" width="75%" height="240px">
    </div>
 
    <script>
@@ -112,6 +149,9 @@
             counter = 0;
          }
       }
+      $("#cover1").click(function(){
+         alert("hover");
+      });
    </script>
 
 </body>
