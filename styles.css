@@ -84,13 +84,24 @@ body{
    background-color: black;
 }
 
+.projects{
+   text-align: center;
+   background-color: none;
+   margin: 40 auto;
+}
+
 .pageTitle p{
    font-size: 2em;
+   text-align: center;
 }
 
 .about{
    margin-top: 50px;
    margin-left: 50px;
+}
+
+.resume{
+   margin: 50px;
 }
 
 .item-wrapper {
@@ -158,4 +169,10 @@ body{
    background-image: url("photos/tech.jpg");
    background-position: center;
    background-size: cover;
+}
+
+#resume{
+   margin: 0 auto;
+   width: 65%;
+   height: 300px;
 }
